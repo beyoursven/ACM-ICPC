@@ -1,0 +1,23 @@
+给出若干排列作为生成集合，求其生成的群的大小
+正解：计算群论，schreier-sims algorithm 
+
+camp16 ppt
+
+black box linear algebra
+yukicoder.me/wiki/black_box_linear_algebra
+
+warm-up:
+求线性递归数列第K项 n>1000, k>1e9
+矩阵乘法：n^3logK
+优化：线性表达
+
+principle:
+循环矩阵(?)
+f(A)=0, 方阵A，非零多项式f，f为A的零化多项式
+矩阵的“线性递推”
+零化多项式-》最小多项式
+
+solution：找A的最小多项式-》A^k->A^kβ
+
+伯克坎普-梅西algo:求解数列最小多项式
+依次读入数列第一项，维护已经读入的数列的最小多项式
